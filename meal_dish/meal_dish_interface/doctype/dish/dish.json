@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "creation": "2024-05-20 23:43:29.869829",
  "doctype": "DocType",
@@ -18,6 +19,8 @@
   "region",
   "serving_type_unit",
   "portion_size_unit",
+  "is_published",
+  "route",
   "enter_ingredients_section",
   "ingredients_list",
   "more_info_section",
@@ -185,13 +188,26 @@
    "fieldname": "cooking_tips",
    "fieldtype": "Data",
    "label": "Cooking Tips"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "icon": "image",
  "image_field": "image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2024-05-27 16:11:45.313489",
+ "modified": "2024-05-27 23:05:42.573620",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Dish",
@@ -210,6 +226,7 @@
    "write": 1
   }
  ],
+ "route": "route",
  "search_fields": "dish_name",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
