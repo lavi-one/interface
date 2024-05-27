@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "autoname": "autoincrement",
  "creation": "2024-05-20 23:30:16.666131",
  "default_view": "List",
@@ -9,7 +10,9 @@
   "ingredients_tab_section",
   "name1",
   "ingredient_category",
-  "ingredient_subcategory"
+  "ingredient_subcategory",
+  "is_published",
+  "route"
  ],
  "fields": [
   {
@@ -34,11 +37,24 @@
    "fieldtype": "Select",
    "label": "Ingredient Subcategory",
    "options": "Condiments\nBakery\nBeverages\nCereals\nBroth or Stock\nDairy\nDietary Supplements"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "index_web_pages_for_search": 1,
+ "is_published_field": "is_published",
  "links": [],
- "modified": "2024-05-27 16:14:10.960568",
+ "modified": "2024-05-28 00:41:22.392242",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Ingredients",
@@ -58,6 +74,7 @@
    "write": 1
   }
  ],
+ "route": "route",
  "search_fields": "name1",
  "show_title_field_in_link": 1,
  "sort_field": "modified",
