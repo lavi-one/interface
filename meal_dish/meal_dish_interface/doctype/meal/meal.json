@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-21 21:45:33.873084",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meal_creation_section",
+  "name1",
+  "cuisine",
+  "serving_size",
+  "portion_size",
+  "image",
+  "column_break_gnyb",
+  "food_time",
+  "food_group",
+  "unit",
+  "portion_unit",
+  "dishes_in_meal_section",
+  "dish_information",
+  "tags"
+ ],
+ "fields": [
+  {
+   "fieldname": "meal_creation_section",
+   "fieldtype": "Section Break",
+   "label": "Meal Creation"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "cuisine",
+   "fieldtype": "Select",
+   "label": "Cuisine",
+   "options": "Indian\nPan Asian\nContinental\nItalian\nMediterranean\nChinese"
+  },
+  {
+   "fieldname": "serving_size",
+   "fieldtype": "Data",
+   "label": "Serving Size"
+  },
+  {
+   "fieldname": "portion_size",
+   "fieldtype": "Data",
+   "label": "Portion Size"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "column_break_gnyb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "food_time",
+   "fieldtype": "Select",
+   "label": "Food Time",
+   "options": "Pre-Breakfast\nBreakfast\nLunch\nTea-time\nDinner\nSweets\nAll day\nSnacks"
+  },
+  {
+   "fieldname": "food_group",
+   "fieldtype": "Select",
+   "label": "Food Group",
+   "options": "Vegetarian\nEgg\nChicken/Meat\nFish\nPlant-based\nVegetarian, Plant-based"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "label": "Serving Unit",
+   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices"
+  },
+  {
+   "fieldname": "portion_unit",
+   "fieldtype": "Select",
+   "label": "Portion Unit",
+   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices"
+  },
+  {
+   "fieldname": "dishes_in_meal_section",
+   "fieldtype": "Section Break",
+   "label": "Dishes and Tags"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "dish_name",
+   "fieldname": "dish_information",
+   "fieldtype": "Table",
+   "label": "Dish Information",
+   "options": "Dish Child Table"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Table",
+   "label": "Tags",
+   "options": "health and ayurveda tags _childtable"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-27 16:12:30.057767",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "Meal",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "name1",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}

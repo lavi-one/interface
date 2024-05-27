@@ -1,0 +1,219 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-20 23:43:29.869829",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dish_creation_section",
+  "dish_name",
+  "food_group",
+  "cuisine",
+  "serving_size",
+  "portion_size",
+  "meal_time",
+  "column_break_gofl",
+  "seasonality",
+  "course_type",
+  "region",
+  "serving_type_unit",
+  "portion_size_unit",
+  "enter_ingredients_section",
+  "ingredients_list",
+  "more_info_section",
+  "steps",
+  "section_break_rfnq",
+  "pre_preparation",
+  "url",
+  "image",
+  "tags",
+  "column_break_tbgl",
+  "ingredient_name",
+  "left_over_suggestions",
+  "cooking_tips"
+ ],
+ "fields": [
+  {
+   "fieldname": "dish_creation_section",
+   "fieldtype": "Section Break",
+   "label": "DIsh Creation"
+  },
+  {
+   "fieldname": "dish_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dish Name"
+  },
+  {
+   "fieldname": "food_group",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Food Group",
+   "options": "Vegetarian\nEgg\nChicken/Meat\nFish\nPlant-based\nVegetarian, Plant-based"
+  },
+  {
+   "fieldname": "cuisine",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Cuisine",
+   "options": "Indian\nPan Asian\nContinental\nItalian\nMediterranean\nChinese"
+  },
+  {
+   "fieldname": "serving_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Serving Size"
+  },
+  {
+   "fieldname": "portion_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Portion Size"
+  },
+  {
+   "fieldname": "meal_time",
+   "fieldtype": "Select",
+   "label": "Meal Time",
+   "options": "Pre-breakfast\nBreakfast\nLunch\nTea-time\nDinner\nSweets\nAll day\nSnacks"
+  },
+  {
+   "fieldname": "column_break_gofl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seasonality",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Seasonality",
+   "options": "Spring\nSummer\nMonsoon\nAutumn\nWinter\nAll Year"
+  },
+  {
+   "fieldname": "course_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Course type",
+   "options": "Mains\nSides\nSmoothies\nBeverages\nSalad\nChutney\nAchar\nSweet",
+   "sort_options": 1
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "region",
+   "options": "North Indian\nSouth Indian\nGujarati\nPunjabi\nBengali\nRajasthani\nMaharashtrian\nKashmiri\nHyderabadi"
+  },
+  {
+   "fieldname": "serving_type_unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Serving Type (unit)",
+   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices"
+  },
+  {
+   "fieldname": "portion_size_unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Portion Size (unit)",
+   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices"
+  },
+  {
+   "fieldname": "enter_ingredients_section",
+   "fieldtype": "Section Break",
+   "label": "Enter Ingredients "
+  },
+  {
+   "default": "name1",
+   "fieldname": "ingredients_list",
+   "fieldtype": "Table",
+   "label": "Ingredients list",
+   "options": "INGREDIENTS CHILD TABLE"
+  },
+  {
+   "fieldname": "more_info_section",
+   "fieldtype": "Section Break",
+   "label": "More Info"
+  },
+  {
+   "fieldname": "steps",
+   "fieldtype": "Small Text",
+   "label": "Steps"
+  },
+  {
+   "fieldname": "section_break_rfnq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "choose",
+   "fieldname": "pre_preparation",
+   "fieldtype": "Select",
+   "label": "Pre Preparation",
+   "options": "choose\nSoak\nMariante\nThaw\nSeason\nPrep\nMake\nSet\nMix"
+  },
+  {
+   "fieldname": "url",
+   "fieldtype": "Data",
+   "label": "URL"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "default": "tags",
+   "fieldname": "tags",
+   "fieldtype": "Table",
+   "label": "Tags",
+   "options": "health and ayurveda tags _childtable"
+  },
+  {
+   "fieldname": "column_break_tbgl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ingredient_name",
+   "fieldtype": "Link",
+   "label": "Ingredient Name",
+   "options": "Ingredients"
+  },
+  {
+   "fieldname": "left_over_suggestions",
+   "fieldtype": "Data",
+   "label": "Left Over Suggestions"
+  },
+  {
+   "fieldname": "cooking_tips",
+   "fieldtype": "Data",
+   "label": "Cooking Tips"
+  }
+ ],
+ "icon": "image",
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-27 16:11:45.313489",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "Dish",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "dish_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "dish_name"
+}

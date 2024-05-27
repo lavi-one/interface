@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-22 23:20:21.912231",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ayurveda_tags_section",
+  "tags",
+  "health"
+ ],
+ "fields": [
+  {
+   "fieldname": "ayurveda_tags_section",
+   "fieldtype": "Section Break",
+   "label": "Tags"
+  },
+  {
+   "fieldname": "tags",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Ayurveda ",
+   "options": "\nBalance Vata Balance Pitta\nBalance Kapha tri-dosha\nBalance\nRasayana (Rejuvenative) Gut friendly\nInstant Energy Blood Purifier Laxative"
+  },
+  {
+   "fieldname": "health",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Health",
+   "options": "\nNo added sugar\nHigh Protein\nMetabolism boost\nDetox Stimulate\nHigh Fiber\nLactose Free\nGluten Free Vegan\nLow Glycemic Index\nImmunity booster\nVit D rich\nVit B12 rich Calcium rich Iron rich\nVit C rich\nRich in Antioxidants\nLow Calories\nImprove Gut Health"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-27 16:12:48.643892",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "health and ayurveda tags _childtable",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

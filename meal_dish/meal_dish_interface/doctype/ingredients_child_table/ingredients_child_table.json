@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-05-21 00:18:15.356959",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ingredients_section",
+  "name1",
+  "ingredient_category",
+  "ingredient_subcategory",
+  "prep_method"
+ ],
+ "fields": [
+  {
+   "fieldname": "ingredients_section",
+   "fieldtype": "Section Break",
+   "label": "Ingredients"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "Ingredients"
+  },
+  {
+   "fieldname": "ingredient_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "ingredient_subcategory",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices"
+  },
+  {
+   "fieldname": "prep_method",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prep Method"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-27 16:12:04.962137",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "INGREDIENTS CHILD TABLE",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
