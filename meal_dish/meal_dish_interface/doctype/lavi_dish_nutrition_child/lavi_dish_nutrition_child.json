@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-29 01:46:51.724324",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dish_name",
+  "energy_kcal",
+  "carbohydrates",
+  "sugars",
+  "fibre",
+  "total_fat",
+  "section_break_wrii",
+  "iron_mg",
+  "protein",
+  "sat_fat",
+  "cholestrol_mg",
+  "sodium_mg",
+  "mono_unsat_fat",
+  "poly_unsat_fat",
+  "calcium_mg"
+ ],
+ "fields": [
+  {
+   "fieldname": "dish_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dish Name",
+   "options": "Dish",
+   "reqd": 1
+  },
+  {
+   "fieldname": "energy_kcal",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "energy_kcal",
+   "reqd": 1
+  },
+  {
+   "fieldname": "carbohydrates",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "carbohydrates",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sugars",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "sugars"
+  },
+  {
+   "fieldname": "protein",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "protein",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fibre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "fibre",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_fat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "total_fat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sat_fat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "sat_fat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cholestrol_mg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "cholestrol_mg",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sodium_mg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "sodium_mg",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mono_unsat_fat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "mono_unsat_fat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "poly_unsat_fat",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "poly_unsat_fat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "calcium_mg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "calcium_mg",
+   "reqd": 1
+  },
+  {
+   "fieldname": "iron_mg",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "iron_mg",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_wrii",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-29 01:57:19.956418",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "Lavi_Dish_Nutrition_Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

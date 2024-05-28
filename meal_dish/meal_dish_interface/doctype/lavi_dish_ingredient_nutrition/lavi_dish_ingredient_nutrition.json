@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-29 00:28:58.972189",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dish",
+  "ingredients",
+  "section_break_cpka",
+  "carbs",
+  "kcal"
+ ],
+ "fields": [
+  {
+   "fieldname": "dish",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "dish",
+   "options": "Dish",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ingredients",
+   "fieldtype": "Table",
+   "label": "ingredients",
+   "options": "INGREDIENTS CHILD TABLE"
+  },
+  {
+   "fieldname": "section_break_cpka",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "carbs",
+   "fieldtype": "Data",
+   "label": "carbs"
+  },
+  {
+   "fieldname": "kcal",
+   "fieldtype": "Data",
+   "label": "kcal"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-29 01:15:31.959189",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "Lavi_Dish_Ingredient_Nutrition",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

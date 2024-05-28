@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-29 01:46:32.202094",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dish_name",
+  "nutrition_section",
+  "energy_kcal",
+  "carbohydrates",
+  "sugars",
+  "protein",
+  "fibre",
+  "sodium_mg",
+  "iron_mg",
+  "column_break_boof",
+  "sat_fat",
+  "total_fat",
+  "mono_unsat_fat",
+  "poly_unsat_fat",
+  "cholestrol_mg",
+  "calcium_mg"
+ ],
+ "fields": [
+  {
+   "fieldname": "dish_name",
+   "fieldtype": "Link",
+   "label": "Dish Name",
+   "options": "Dish"
+  },
+  {
+   "fieldname": "nutrition_section",
+   "fieldtype": "Section Break",
+   "label": "Nutrition"
+  },
+  {
+   "fieldname": "energy_kcal",
+   "fieldtype": "Data",
+   "label": "energy_kcal"
+  },
+  {
+   "fieldname": "carbohydrates",
+   "fieldtype": "Data",
+   "label": "carbohydrates"
+  },
+  {
+   "fieldname": "sugars",
+   "fieldtype": "Data",
+   "label": "sugars"
+  },
+  {
+   "fieldname": "protein",
+   "fieldtype": "Data",
+   "label": "protein"
+  },
+  {
+   "fieldname": "fibre",
+   "fieldtype": "Data",
+   "label": "fibre"
+  },
+  {
+   "fieldname": "sodium_mg",
+   "fieldtype": "Data",
+   "label": "sodium_mg"
+  },
+  {
+   "fieldname": "iron_mg",
+   "fieldtype": "Data",
+   "label": "iron_mg"
+  },
+  {
+   "fieldname": "column_break_boof",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sat_fat",
+   "fieldtype": "Data",
+   "label": "sat_fat"
+  },
+  {
+   "fieldname": "total_fat",
+   "fieldtype": "Data",
+   "label": "total_fat"
+  },
+  {
+   "fieldname": "mono_unsat_fat",
+   "fieldtype": "Data",
+   "label": "mono_unsat_fat"
+  },
+  {
+   "fieldname": "poly_unsat_fat",
+   "fieldtype": "Data",
+   "label": "poly_unsat_fat"
+  },
+  {
+   "fieldname": "cholestrol_mg",
+   "fieldtype": "Data",
+   "label": "cholestrol_mg"
+  },
+  {
+   "fieldname": "calcium_mg",
+   "fieldtype": "Data",
+   "label": "calcium_mg"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-29 02:04:29.595086",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "Lavi_Dish_Nutrition",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "dish_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "dish_name"
+}
