@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-05-21 21:55:17.101875",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dishes_section",
+  "dish",
+  "serving_size",
+  "unit"
+ ],
+ "fields": [
+  {
+   "fieldname": "dishes_section",
+   "fieldtype": "Section Break",
+   "label": "Dishes"
+  },
+  {
+   "fieldname": "dish",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dish",
+   "options": "Dish"
+  },
+  {
+   "fieldname": "serving_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Serving Size"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-28 12:25:04.000877",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "Dish Child Table",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
