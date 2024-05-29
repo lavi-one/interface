@@ -22,7 +22,7 @@
   "is_published",
   "route",
   "enter_ingredients_section",
-  "ingredients_list",
+  "ingredients",
   "more_info_section",
   "steps",
   "section_break_rfnq",
@@ -125,13 +125,6 @@
    "label": "Enter Ingredients "
   },
   {
-   "default": "name1",
-   "fieldname": "ingredients_list",
-   "fieldtype": "Table",
-   "label": "Ingredients list",
-   "options": "INGREDIENTS CHILD TABLE"
-  },
-  {
    "fieldname": "more_info_section",
    "fieldtype": "Section Break",
    "label": "More Info"
@@ -199,6 +192,13 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "default": "name1",
+   "fieldname": "ingredients",
+   "fieldtype": "Table",
+   "label": "Ingredients",
+   "options": "INGREDIENTS CHILD TABLE"
   }
  ],
  "has_web_view": 1,
@@ -207,7 +207,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-05-27 23:05:42.573620",
+ "modified": "2024-05-30 01:53:01.967921",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Dish",

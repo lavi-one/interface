@@ -6,10 +6,12 @@
  "engine": "InnoDB",
  "field_order": [
   "dish",
+  "food_group",
   "ingredients",
   "section_break_cpka",
-  "carbs",
-  "kcal"
+  "table_nmjz",
+  "section_break_xiam",
+  "table_feiq"
  ],
  "fields": [
   {
@@ -21,29 +23,41 @@
    "reqd": 1
   },
   {
+   "default": "name1",
    "fieldname": "ingredients",
    "fieldtype": "Table",
    "label": "ingredients",
-   "options": "INGREDIENTS CHILD TABLE"
+   "options": "INGREDIENTS CHILD TABLE",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_cpka",
+   "fieldtype": "Section Break",
+   "label": "Enter Nutritional Value"
+  },
+  {
+   "fieldname": "food_group",
+   "fieldtype": "Data",
+   "label": "Food Group"
+  },
+  {
+   "fieldname": "table_nmjz",
+   "fieldtype": "Table",
+   "options": "Lavi_Dish_Ingredient_Nutrition_Child"
+  },
+  {
+   "fieldname": "section_break_xiam",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "carbs",
-   "fieldtype": "Data",
-   "label": "carbs"
-  },
-  {
-   "fieldname": "kcal",
-   "fieldtype": "Data",
-   "label": "kcal"
+   "fieldname": "table_feiq",
+   "fieldtype": "Table",
+   "options": "Lavi_Dish_Ingredient_Nutrition_Child"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-29 01:15:31.959189",
+ "modified": "2024-05-30 04:28:00.267237",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Lavi_Dish_Ingredient_Nutrition",

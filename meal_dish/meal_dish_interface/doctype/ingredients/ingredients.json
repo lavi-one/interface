@@ -1,10 +1,11 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
- "autoname": "autoincrement",
+ "autoname": "field:name1",
  "creation": "2024-05-20 23:30:16.666131",
  "default_view": "List",
  "doctype": "DocType",
+ "document_type": "Other",
  "engine": "InnoDB",
  "field_order": [
   "ingredients_tab_section",
@@ -21,10 +22,12 @@
    "label": "Ingredients Tab"
   },
   {
+   "default": "name1",
    "fieldname": "name1",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name"
+   "label": "Name",
+   "unique": 1
   },
   {
    "fieldname": "ingredient_category",
@@ -54,11 +57,11 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-05-28 00:41:22.392242",
+ "modified": "2024-05-30 04:13:32.287416",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Ingredients",
- "naming_rule": "Autoincrement",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -76,9 +79,12 @@
  ],
  "route": "route",
  "search_fields": "name1",
+ "show_name_in_global_search": 1,
+ "show_preview_popup": 1,
  "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "name1"
+ "title_field": "name1",
+ "translated_doctype": 1
 }

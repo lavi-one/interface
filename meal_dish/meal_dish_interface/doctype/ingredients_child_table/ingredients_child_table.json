@@ -8,8 +8,8 @@
  "field_order": [
   "ingredients_section",
   "name1",
-  "ingredient_category",
-  "ingredient_subcategory",
+  "qty",
+  "unit",
   "prep_method"
  ],
  "fields": [
@@ -22,33 +22,40 @@
    "fieldname": "name1",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Name",
-   "options": "Ingredients"
-  },
-  {
-   "fieldname": "ingredient_category",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Qty"
-  },
-  {
-   "fieldname": "ingredient_subcategory",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Unit",
-   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices"
+   "options": "Ingredients",
+   "reqd": 1
   },
   {
    "fieldname": "prep_method",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Prep Method"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Qty",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Unit",
+   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-27 16:12:04.962137",
+ "modified": "2024-05-30 03:35:43.434556",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "INGREDIENTS CHILD TABLE",

@@ -6,6 +6,8 @@
  "engine": "InnoDB",
  "field_order": [
   "dish_name",
+  "section_break_imps",
+  "table_jier",
   "nutrition_section",
   "energy_kcal",
   "carbohydrates",
@@ -102,11 +104,20 @@
    "fieldname": "calcium_mg",
    "fieldtype": "Data",
    "label": "calcium_mg"
+  },
+  {
+   "fieldname": "section_break_imps",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_jier",
+   "fieldtype": "Table",
+   "options": "Lavi_Dish_Nutrition_Child"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-29 02:04:29.595086",
+ "modified": "2024-05-30 00:45:31.947746",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Lavi_Dish_Nutrition",
