@@ -12,7 +12,8 @@
   "dish_information",
   "tableone",
   "tabletwo",
-  "check_the_box_once_done"
+  "check_the_box_once_done",
+  "amended_from"
  ],
  "fields": [
   {
@@ -55,12 +56,22 @@
    "fieldname": "check_the_box_once_done",
    "fieldtype": "Check",
    "label": "Check the box once done"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lavi_Meal_Dish_Nutrition",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-06-02 03:28:46.718231",
+ "modified": "2024-06-02 04:33:41.679239",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Lavi_Meal_Dish_Nutrition",
@@ -76,7 +87,9 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
