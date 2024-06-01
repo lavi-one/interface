@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:select_meal",
+ "creation": "2024-05-30 12:54:38.385630",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "meal_section",
+  "select_meal",
+  "food_group",
+  "dish_information",
+  "tableone",
+  "tabletwo",
+  "check_the_box_once_done"
+ ],
+ "fields": [
+  {
+   "fieldname": "meal_section",
+   "fieldtype": "Section Break",
+   "label": "Meal Information"
+  },
+  {
+   "fieldname": "select_meal",
+   "fieldtype": "Data",
+   "label": "Select Meal",
+   "unique": 1
+  },
+  {
+   "fieldname": "food_group",
+   "fieldtype": "Data",
+   "label": "Food Group"
+  },
+  {
+   "fieldname": "dish_information",
+   "fieldtype": "Table",
+   "label": "Dish Information",
+   "options": "Dish Child Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tableone",
+   "fieldtype": "Table",
+   "options": "Lavi_Meal_Dish_Nutrition_child"
+  },
+  {
+   "fieldname": "tabletwo",
+   "fieldtype": "Table",
+   "options": "Lavi_Meal_Dish_Nutrition_child_1"
+  },
+  {
+   "allow_on_submit": 1,
+   "bold": 1,
+   "default": "0",
+   "fieldname": "check_the_box_once_done",
+   "fieldtype": "Check",
+   "label": "Check the box once done"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-02 03:28:46.718231",
+ "modified_by": "Administrator",
+ "module": "Meal_dish_Interface",
+ "name": "Lavi_Meal_Dish_Nutrition",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "select_meal",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "select_meal"
+}

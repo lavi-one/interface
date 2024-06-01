@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:dish",
  "creation": "2024-05-29 00:28:58.972189",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,19 +9,22 @@
   "dish",
   "food_group",
   "ingredients",
+  "nutrition_check",
   "section_break_cpka",
-  "table_nmjz",
+  "tableone",
   "section_break_xiam",
-  "table_feiq"
+  "tabletwo",
+  "check_submit_cant_be_change_one_done",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "dish",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "dish",
-   "options": "Dish",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "default": "name1",
@@ -41,26 +45,50 @@
    "label": "Food Group"
   },
   {
-   "fieldname": "table_nmjz",
-   "fieldtype": "Table",
-   "options": "Lavi_Dish_Ingredient_Nutrition_Child"
-  },
-  {
    "fieldname": "section_break_xiam",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "table_feiq",
+   "fieldname": "tableone",
    "fieldtype": "Table",
    "options": "Lavi_Dish_Ingredient_Nutrition_Child"
+  },
+  {
+   "fieldname": "tabletwo",
+   "fieldtype": "Table",
+   "options": "Lavi_Dish_Ingredient_Nutrition_Child_2"
+  },
+  {
+   "default": "0",
+   "fieldname": "nutrition_check",
+   "fieldtype": "Check",
+   "label": "Check The Nutrition Carefully"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_submit_cant_be_change_one_done",
+   "fieldtype": "Check",
+   "label": "Done, Submit (can't be change one done)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lavi_Dish_Ingredient_Nutrition",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-05-30 04:28:00.267237",
+ "modified": "2024-06-01 20:00:58.974998",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Lavi_Dish_Ingredient_Nutrition",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -76,7 +104,10 @@
    "write": 1
   }
  ],
+ "search_fields": "dish",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "dish"
 }

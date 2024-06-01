@@ -39,7 +39,7 @@
   {
    "fieldname": "dish_creation_section",
    "fieldtype": "Section Break",
-   "label": "DIsh Creation"
+   "label": "Dish Creation"
   },
   {
    "fieldname": "dish_name",
@@ -207,7 +207,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-05-30 01:53:01.967921",
+ "modified": "2024-06-02 04:08:55.332928",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Dish",

@@ -1,52 +1,59 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:dish",
- "creation": "2024-05-29 01:46:32.202094",
+ "creation": "2024-05-30 15:10:55.859550",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "dish",
-  "nutrition_section",
+  "enter_the_data_section",
+  "column_break_tvbn",
   "energy_kcal",
   "carbohydrates",
   "sugars",
   "protein",
   "fibre",
-  "sodium_mg",
-  "iron_mg",
-  "column_break_boof",
-  "sat_fat",
   "total_fat",
+  "sat_fat",
+  "cholestrol_mg",
+  "sodium_mg",
   "mono_unsat_fat",
   "poly_unsat_fat",
-  "cholestrol_mg",
-  "calcium_mg"
+  "calcium_mg",
+  "iron_mg"
  ],
  "fields": [
   {
-   "fieldname": "nutrition_section",
+   "fieldname": "enter_the_data_section",
    "fieldtype": "Section Break",
-   "label": "Nutrition"
+   "label": "Enter the Data"
+  },
+  {
+   "fieldname": "column_break_tvbn",
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "energy_kcal",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "energy_kcal"
   },
   {
    "fieldname": "carbohydrates",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "carbohydrates"
   },
   {
    "fieldname": "sugars",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "sugars"
   },
   {
    "fieldname": "protein",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "protein"
   },
   {
@@ -55,18 +62,9 @@
    "label": "fibre"
   },
   {
-   "fieldname": "sodium_mg",
+   "fieldname": "total_fat",
    "fieldtype": "Data",
-   "label": "sodium_mg"
-  },
-  {
-   "fieldname": "iron_mg",
-   "fieldtype": "Data",
-   "label": "iron_mg"
-  },
-  {
-   "fieldname": "column_break_boof",
-   "fieldtype": "Column Break"
+   "label": "total_fat"
   },
   {
    "fieldname": "sat_fat",
@@ -74,9 +72,14 @@
    "label": "sat_fat"
   },
   {
-   "fieldname": "total_fat",
+   "fieldname": "cholestrol_mg",
    "fieldtype": "Data",
-   "label": "total_fat"
+   "label": "cholestrol_mg"
+  },
+  {
+   "fieldname": "sodium_mg",
+   "fieldtype": "Data",
+   "label": "sodium_mg"
   },
   {
    "fieldname": "mono_unsat_fat",
@@ -89,50 +92,26 @@
    "label": "poly_unsat_fat"
   },
   {
-   "fieldname": "cholestrol_mg",
-   "fieldtype": "Data",
-   "label": "cholestrol_mg"
-  },
-  {
    "fieldname": "calcium_mg",
    "fieldtype": "Data",
    "label": "calcium_mg"
   },
   {
-   "fieldname": "dish",
-   "fieldtype": "Link",
-   "label": "Dish",
-   "options": "Dish",
-   "unique": 1
+   "fieldname": "iron_mg",
+   "fieldtype": "Data",
+   "label": "iron_mg"
   }
  ],
  "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2024-06-01 01:18:19.020003",
+ "modified": "2024-06-02 03:20:25.406412",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
- "name": "Lavi_Dish_Nutrition",
- "naming_rule": "By fieldname",
+ "name": "Lavi_Meal_Dish_Nutrition_child",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "search_fields": "dish",
- "show_title_field_in_link": 1,
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "dish",
- "translated_doctype": 1
+ "states": []
 }

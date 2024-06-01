@@ -1,33 +1,37 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:dish",
- "creation": "2024-05-29 01:46:32.202094",
+ "autoname": "field:select_the_ingredient",
+ "creation": "2024-06-01 01:23:20.061941",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "dish",
-  "nutrition_section",
+  "select_the_ingredient",
+  "section_break_bbrd",
   "energy_kcal",
-  "carbohydrates",
   "sugars",
-  "protein",
   "fibre",
-  "sodium_mg",
-  "iron_mg",
-  "column_break_boof",
   "sat_fat",
+  "sodium_mg",
+  "calcium_mg",
+  "iron_mg",
+  "column_break_umjy",
+  "carbohydrates",
+  "protein",
+  "cholestrol_mg",
   "total_fat",
   "mono_unsat_fat",
-  "poly_unsat_fat",
-  "cholestrol_mg",
-  "calcium_mg"
+  "poly_unsat_fat"
  ],
  "fields": [
   {
-   "fieldname": "nutrition_section",
-   "fieldtype": "Section Break",
-   "label": "Nutrition"
+   "fieldname": "select_the_ingredient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Select the Ingredient",
+   "options": "Ingredients",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "energy_kcal",
@@ -55,18 +59,9 @@
    "label": "fibre"
   },
   {
-   "fieldname": "sodium_mg",
+   "fieldname": "total_fat",
    "fieldtype": "Data",
-   "label": "sodium_mg"
-  },
-  {
-   "fieldname": "iron_mg",
-   "fieldtype": "Data",
-   "label": "iron_mg"
-  },
-  {
-   "fieldname": "column_break_boof",
-   "fieldtype": "Column Break"
+   "label": "total_fat"
   },
   {
    "fieldname": "sat_fat",
@@ -74,9 +69,14 @@
    "label": "sat_fat"
   },
   {
-   "fieldname": "total_fat",
+   "fieldname": "cholestrol_mg",
    "fieldtype": "Data",
-   "label": "total_fat"
+   "label": "cholestrol_mg"
+  },
+  {
+   "fieldname": "sodium_mg",
+   "fieldtype": "Data",
+   "label": "sodium_mg"
   },
   {
    "fieldname": "mono_unsat_fat",
@@ -89,29 +89,30 @@
    "label": "poly_unsat_fat"
   },
   {
-   "fieldname": "cholestrol_mg",
-   "fieldtype": "Data",
-   "label": "cholestrol_mg"
-  },
-  {
    "fieldname": "calcium_mg",
    "fieldtype": "Data",
    "label": "calcium_mg"
   },
   {
-   "fieldname": "dish",
-   "fieldtype": "Link",
-   "label": "Dish",
-   "options": "Dish",
-   "unique": 1
+   "fieldname": "iron_mg",
+   "fieldtype": "Data",
+   "label": "iron_mg"
+  },
+  {
+   "fieldname": "section_break_bbrd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_umjy",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-01 01:18:19.020003",
+ "modified": "2024-06-01 01:30:36.205983",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
- "name": "Lavi_Dish_Nutrition",
+ "name": "Lavi_Ingredients_Nutrition",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
@@ -128,11 +129,9 @@
    "write": 1
   }
  ],
- "search_fields": "dish",
- "show_title_field_in_link": 1,
+ "search_fields": "select_the_ingredient",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "dish",
- "translated_doctype": 1
+ "title_field": "select_the_ingredient"
 }
