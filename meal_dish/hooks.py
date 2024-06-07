@@ -133,20 +133,20 @@ app_license = "mit"
 # meal_dish/hooks.py
 
 
-doc_events = {
-    "Dish": {
-        "after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Dish_Ingredient_Nutrition_insert"
-    },
-    "Lavi_Dish_Ingredient_Nutrition": {
-        "on_submit": "meal_dish.meal_dish_interface.utils.update_dish_nutrition"
-    },
-    "Meal": {
-        "after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Meal_Dish_Nutrition_insert"
-    },
-    "Lavi_Meal_Dish_Nutrition": {
-        "on_submit": "meal_dish.meal_dish_interface.utils.update_meal_nutrition"
-    }
-}
+# doc_events = {
+#     "Dish": {
+#         "after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Dish_Ingredient_Nutrition_insert"
+#     },
+#     "Lavi_Dish_Ingredient_Nutrition": {
+#         "on_submit": "meal_dish.meal_dish_interface.utils.update_dish_nutrition"
+#     },
+#     "Meal": {
+#         "after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Meal_Dish_Nutrition_insert"
+#     },
+#     "Lavi_Meal_Dish_Nutrition": {
+#         "on_submit": "meal_dish.meal_dish_interface.utils.update_meal_nutrition"
+#     }
+# }
 
 
      
