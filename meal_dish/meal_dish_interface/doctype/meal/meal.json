@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2024-05-21 21:45:33.873084",
  "doctype": "DocType",
@@ -119,7 +120,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-05-28 00:42:05.445301",
+ "modified": "2024-06-08 18:56:11.835174",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Meal",

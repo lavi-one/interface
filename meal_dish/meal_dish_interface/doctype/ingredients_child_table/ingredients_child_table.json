@@ -24,8 +24,7 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Name",
-   "options": "Ingredients",
-   "reqd": 1
+   "options": "Ingredients"
   },
   {
    "fieldname": "prep_method",
@@ -39,8 +38,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Qty",
-   "reqd": 1
+   "label": "Qty"
   },
   {
    "fieldname": "unit",
@@ -48,14 +46,13 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Unit",
-   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\nslices",
-   "reqd": 1
+   "options": "pieces\ncup\nadult\nglass\nmug\ngrams\nbowl\ninch\nsprigs\nbunches\ntbsp\nml\nslice\ntsp\ncloves\nhandful\npc\nto taste\ngm\nleaves\nslices"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-05-30 03:35:43.434556",
+ "modified": "2024-06-07 02:19:16.647552",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "INGREDIENTS CHILD TABLE",

@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
+ "allow_import": 1,
  "allow_rename": 1,
  "creation": "2024-05-20 23:43:29.869829",
  "doctype": "DocType",
@@ -103,7 +104,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "region",
-   "options": "North Indian\nSouth Indian\nGujarati\nPunjabi\nBengali\nRajasthani\nMaharashtrian\nKashmiri\nHyderabadi"
+   "options": "North Indian\nSouth Indian\nGujarati\nPunjabi\nBengali\nRajasthani\nAll\nMaharashtrian\nAsian\nCentral Indian\nChina\nEurope\nEuropean\nGreece\nMediterranean\nNorth America\nNorth Indian\nPAN India\nregion\nSouth America\nSouth Indian\nWest Indian\nKashmiri\nHyderabadi"
   },
   {
    "fieldname": "serving_type_unit",
@@ -207,7 +208,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "is_published",
  "links": [],
- "modified": "2024-06-02 04:08:55.332928",
+ "modified": "2024-06-05 01:23:36.684372",
  "modified_by": "Administrator",
  "module": "Meal_dish_Interface",
  "name": "Dish",

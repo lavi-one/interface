@@ -133,29 +133,28 @@ app_license = "mit"
 # meal_dish/hooks.py
 
 
-doc_events = {
-    "Dish": {
-        "after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Dish_Ingredient_Nutrition_insert"
-    },
-    "Lavi_Dish_Ingredient_Nutrition": {
-        "on_submit": "meal_dish.meal_dish_interface.utils.update_dish_nutrition"
-    },
-    "Meal": {
-        "after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Meal_Dish_Nutrition_insert"
-    },
-    "Lavi_Meal_Dish_Nutrition": {
-        "on_submit": "meal_dish.meal_dish_interface.utils.update_meal_nutrition"
-    }
-}
-
-
-     
-##update_meal_nutrition
-     
-# ---------------
-
-# scheduler_events = {
-# 	"all": [
+#doc_events = {
+    #"Dish": {
+    #    "after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Dish_Nutrition_Insert_Update"
+   # },
+      #"Meal": {
+     #   "after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Meal_Dish_Nutrition_insert"
+    #},
+   # "Lavi_Meal_Dish_Nutrition": {
+  #     "on_submit": "meal_dish.meal_dish_interface.utils.update_meal_nutrition"
+ #  }
+#  }       
+  
+  
+  
+ ## after_insert": "meal_dish.meal_dish_interface.utils.Lavi_Meal_Dish_Nutrition_insert",
+   #      "on_update": "update_meal_nutrition"
+  
+  
+#cheduler_events = {
+# 	"al,l": ["Lavi_Meal_Dish_Nutrition": {
+       
+#    }
 # 		"meal_dish.tasks.all"
 # 	],
 # 	"daily": [
